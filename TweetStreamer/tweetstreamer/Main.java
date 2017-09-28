@@ -30,10 +30,7 @@ public class Main {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true);
         cb.setJSONStoreEnabled(true);
-        cb.setOAuthConsumerKey("EOpZDp4Y7DLwScGKin2TW0aVb");
-        cb.setOAuthConsumerSecret("FUMb18eV2JBBEkkgcksV1VGwlWXCDP1uy9PcKubqePWzoepDP1");
-        cb.setOAuthAccessToken("2829735517-tq23K50NDZZc4PRpAgiGKZk0opqDqM45iK03N2D");
-        cb.setOAuthAccessTokenSecret("qlfg86qpAknOoVtvBiOMHQOsQFh9voJNCV6kh37K0LQ9T");
+        
 
         TwitterStream twitterStream = new TwitterStreamFactory(cb.build()).getInstance();
         StatusListener listener = new StatusListener() {
